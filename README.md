@@ -23,6 +23,22 @@ needle.get('http://www.google.com', function(error, response, body){
 });
 ```
 
+- - -
+About this fork
+===============
+This fork add some options for special usages. The followings are new features:
+
+Request options
+---------------
+ - `ssl`       : Force request through HTTPS protocol to fix Redirect loop. Defaults to `false`.
+
+Response options
+----------------
+ - `charset`   : Specify a charset when decoding response. Defaults to `content-type` of response header.
+ - `real_path` : Rename output path according response (Uses with `output`). Defaults to `false`.
+
+- - -
+
 Methods
 -------
 
