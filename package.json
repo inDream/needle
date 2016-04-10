@@ -1,7 +1,7 @@
 {
   "name": "needle",
-  "version": "0.7.11",
-  "description": "Tiny yet feature-packed HTTP client. With multipart, charset decoding and proxy support.",
+  "version": "0.11.0",
+  "description": "The leanest and most handsome HTTP client in the Nodelands.",
   "keywords": [
     "http",
     "https",
@@ -14,7 +14,9 @@
     "deflate",
     "timeout",
     "charset",
-    "iconv"
+    "iconv",
+    "cookie",
+    "redirect"
   ],
   "tags": [
     "http",
@@ -28,7 +30,9 @@
     "deflate",
     "timeout",
     "charset",
-    "iconv"
+    "iconv",
+    "cookie",
+    "redirect"
   ],
   "author": "Tomás Pollak <tomas@forkhq.com>",
   "repository": {
@@ -36,6 +40,7 @@
     "url": "https://github.com/tomas/needle.git"
   },
   "dependencies": {
+    "debug": "^2.1.2",
     "iconv-lite": "^0.4.4"
   },
   "devDependencies": {
@@ -57,6 +62,7 @@
   "bin": {
     "needle": "./bin/needle"
   },
+  "license": "MIT",
   "engines": {
     "node": ">= 0.10.x"
   }
